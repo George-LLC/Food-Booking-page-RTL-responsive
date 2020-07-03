@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-486 -230L1434 -230L1434 1098L-486 1098Z" id="svg_1"/>
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #7fab95;stroke-width: 2 } 
+		.shp1 { fill: none;stroke: #7fab95;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	
+<g class="currentLayer" style=""><title>Layer 1</title><g id="Web 1920 – 3" clip-path="url(#cp1)" class="selected">
+		<g id="Group 136">
+			<g id="Group 134">
+				<path id="Ellipse 113" class="shp0" d="M10.051019759595391,18.38775519850104 C5.351020137720943,18.38775519850104 1.5510204434394743,14.587755504219572 1.5510204434394743,9.887755882345123 C1.5510204434394743,5.187756260470676 5.351020137720943,1.3877565661892066 10.051019759595391,1.3877565661892066 C14.75101938146984,1.3877565661892066 18.55101907575131,5.187756260470676 18.55101907575131,9.887755882345123 C18.55101907575131,14.587755504219572 14.75101938146984,18.38775519850104 10.051019759595391,18.38775519850104 z"/>
+				<path id="Line 25" class="shp1" d="M16.051019276881924,15.887755399631654 L20.05101895507294,19.887755077822675 L16.051019276881924,15.887755399631654 z"/>
+			</g>
+		</g>
+	</g></g></svg>

@@ -1,0 +1,171 @@
+.form-order {
+   display: none;
+  position: fixed;
+  top: 0; 
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+
+
+/* Add styles to the form container */
+.order-container {
+  position: relative;
+  width: 877px;
+  height: 567px;
+  padding: 10px;
+  border-radius: 17px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../imgs/popupImg/bg-popup.svg) no-repeat #ffffff;
+}
+
+.class-rtl .order-container{
+  left:unset;
+  right: 50%;
+  transform: translateX(50%);
+  background: url(../imgs/popupImg/bg-popup-arab.svg) no-repeat #ffffff;
+}
+
+.form-order .order-container h1.order-h1{
+	width: max-content;
+	margin-top: 10px;
+  margin-left: 40px;
+  font-size: 40px;
+  color: #ffffff;
+  font-family: DIN-Condensed-Web;
+}
+.class-rtl .form-order .order-container h1.order-h1{
+   font-family: DIN-Arabic-Cond;
+}
+.order-container .closeOrder {
+	float: right;
+  margin-top: -95px;
+  margin-right: 25px;
+  width: 33px;
+  height: 33px;
+  background: url("../imgs/popupImg/closePopup.svg");
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: #ffffff;
+}
+
+.class-rtl .order-container .closeOrder{
+  float: left;
+}
+
+.form-order .order-container .order-text{
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  margin-top: 45px;
+  font-size: 30px;
+  font-family: DIN-Condensed-Web;
+  text-align: center;
+  line-height: 40px;
+  padding: 0;
+}
+.class-rtl .form-order .order-container .order-text{
+  font-family: DIN-Arabic-Cond;
+}
+.form-order .order-container .order-img{
+  position: relative;
+  margin-top: 35px;
+  margin-left: -10px;
+}
+.class-rtl .form-order .order-container .order-img{
+  margin-left: unset;
+  margin-right: -10px;
+}
+
+.form-order .order-container .order-img .order-btn-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFA402;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: DIN-Condensed-Web;
+  width: 345px;
+  height: 45px;
+  border-radius: 23px;
+  padding: 0;
+  opacity: 0.9;
+}
+.class-rtl .form-order .order-container .order-img .order-btn-img{
+  font-family: DIN-Arabic-Cond;
+}
+.form-order .order-container .order-img .order-btn-img:hover{
+  opacity: 1;
+}
+#ord-img{
+  display: block;
+}
+
+#ord-img-mob{
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* Add styles to the form container */
+.order-container {
+  position: relative;
+  width: 328px;
+  height: 417px;
+  background: url(../imgs/popupImg/mob/bd-popup-mob.svg) no-repeat #ffffff;
+}
+.class-rtl .order-container{
+  background: url(../imgs/popupImg/mob/bd-popup-mob-arab.svg) no-repeat #ffffff;
+}
+
+.form-order .order-container h1.order-h1{
+  width: max-content;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: DIN-Condensed-Web;
+}
+.class-rtl .form-order .order-container h1.order-h1{
+   font-family: DIN-Arabic-Cond;
+}
+.order-container .closeOrder {
+  margin-top: -80px;
+  margin-right: 0px;
+  width: 21px;
+  height: 21px;
+  background: url("../imgs/popupImg/mob/clos-mob.svg") no-repeat;
+}
+
+.form-order .order-container .order-text{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.form-order .order-container .order-img{
+  margin-top: 0px;
+  margin-left: -10px;
+}
+
+.form-order .order-container .order-img .order-btn-img{
+  font-size: 23px;
+  width: 269px;
+  height: 35px;
+}
+
+
+#ord-img-mob{
+  display: block;
+}
+
+#ord-img{
+  display: none;
+}
+
+}

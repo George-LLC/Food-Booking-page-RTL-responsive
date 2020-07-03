@@ -1,0 +1,468 @@
+
+/* The popup form - hidden by default */
+.form-popup {
+   display: none;
+  position: fixed;
+  top: 0; 
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+/* Add styles to the form container */
+.form-container {
+  position: relative;
+  width: 877px;
+  height: 567px;
+  padding: 10px;
+  border-radius: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../imgs/popupImg/bg-popup.svg) no-repeat #ffffff;
+}
+.class-rtl .form-container{
+	left:unset;
+  right: 50%;
+  transform: translate(50%, -50%);
+	background: url(../imgs/popupImg/bg/bg-popup-arab.svg) no-repeat #ffffff;
+}
+
+.form-container h1{
+	color: #FFFFFF;
+	font-size: 40px;
+	font-family: DIN-Condensed-Web;
+	padding-left: 57px;
+	padding-top: 32px;
+}
+.class-rtl .form-container h1{
+	padding-right: 57px;
+	padding-left: unset;
+	text-align: right;
+	font-family: DIN-Arabic-Cond;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+	position: absolute;
+	border-radius: 23px;
+	background-color: #e8e8e8;
+  border: none;
+  left: 59px;
+  text-indent: 24px;
+  font-family: DINCond-Medium;
+	font-size: 30px;
+	color: #B8B4B2;
+}
+.class-rtl .form-container input[type=text], .class-rtl .form-container input[type=password]{
+	right: 59px;
+	left: unset;
+	font-family: DIN-Arabic-Cond;
+}
+.form-container input[type=text]::placeholder, .form-container input[type=password]::placeholder {
+	font-family: DINCond-Medium;
+	font-size: 30px;
+	color: #B8B4B2;
+}
+.class-rtl .form-container input[type=text]::placeholder, 
+.class-rtl .form-container input[type=password]::placeholder {
+	font-family: DIN-Arabic-Cond;	
+}
+.form-container input[type=password]::-webkit-input-placeholder, .form-container input[type=text]::-webkit-input-placeholder{
+	font-family: DINCond-Medium;
+	font-size: 30px;
+	color: #B8B4B2;
+}
+.class-rtl .form-container input[type=password]::-webkit-input-placeholder, 
+.class-rtl .form-container input[type=text]::-webkit-input-placeholder{
+	font-family: DIN-Arabic-Cond;
+}
+.form-container input[type=text]:-ms-input-placeholder, 
+.class-rtl .form-container input[type=password]:-ms-input-placeholder{
+	font-family: DINCond-Medium;
+	font-size: 30px;
+	color: #B8B4B2;
+}
+.class-rtl .form-container input[type=text]:-ms-input-placeholder, 
+.class-rtl .form-container input[type=password]:-ms-input-placeholder{
+	font-family: DIN-Arabic-Cond;
+}
+.form-container input[type=text] {
+	width: 765px;
+	height: 45px;
+	top: 202px;
+}
+
+.form-container input[type=password] {
+	width: 572px;
+	height: 45px;
+	top: 268px;
+}
+
+
+
+
+
+
+/* The container */
+.container-input {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 183px;
+  left: 635px;
+  width: max-content;	
+  font-size: 30px;
+	line-height: 12px;
+	color: #ffa402;
+	font-family: "DINCond-Medium";
+	font-weight: 500;
+}
+.class-rtl .container-input{
+	left: 54px;
+	line-height: 16px;
+	top: 177px;
+	font-family: DIN-Arabic-Cond;
+}
+
+/* Hide the browser's default checkbox */
+.container-input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  margin-top: -4px;
+  left: 0px;
+  height: 23px;
+  width: 23px;
+  background-color: #ffffff;
+  border: 2px solid orange;
+}
+
+/* On mouse-over, add a grey background color */
+.container-input:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+/* When the checkbox is checked, add a white background */
+.container-input input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border: 2px solid #ffa402;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-input input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-input .checkmark:after {
+  right: 4.8px;
+  width:9px;
+  height: 15px;
+  border: solid #ffa402;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+	position: absolute;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn.login{
+	width: 572px;
+	height: 45px;
+	border-radius: 23px;
+	background-color: #ffa402;
+	top: 334px;
+	left: 59px;
+	font-size: 30px;
+	font-family: DIN-Condensed-Web;
+	color: #FFFFFF;
+	padding: 0;
+}
+.class-rtl .form-container .btn.login{
+	right: 59px;
+		font-family: DIN-Arabic-Cond;
+
+}
+.form-container .fogetPassword{
+	content: "Forget Password";
+	font-size: 30px;
+	color: #ffa402!important;
+	position: absolute;
+	right: 67px;
+	top: 334px;
+	font-family: DINCond-Medium;
+	cursor: pointer;
+}
+.class-rtl .form-container .fogetPassword{
+	left: 59px;
+	right: unset;
+		font-family: DIN-Arabic-Cond;
+
+}
+
+
+.form-container .btn.cancel {
+	top: 25px;
+	right: 25px;
+  background-color: #ffffff;
+  border-top-right-radius: 17px;
+  background: url("../imgs/popupImg/closePopup.svg") no-repeat #ffffff;
+}
+
+.class-rtl .form-container .btn.cancel{
+	left: 25px;
+	right: unset;
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.link-signUp a{
+	position: absolute;
+	height: max-content;
+	font-size: 30px;
+	line-height: 12px;
+	color: #ffa402;
+	font-family: "DIN-Condensed-Web";
+	font-weight: 500;
+	top: 141px;
+	left: 223px;
+	text-decoration: none;
+}
+
+.logWith{
+		top: 412px;
+    position: absolute;
+    font-family: DIN-Condensed-Web;
+    font-size: 30px;
+    color: #FFA402;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ .class-rtl .link-signUp a, .class-rtl .logWith{
+ 			font-family: DIN-Arabic-Cond;
+ }
+.iconsSocial{
+		top: 470px;
+    position: absolute;    
+    left: 50%;
+    transform: translateX(-50%);
+}
+.iconsSocial a{
+	padding-right: 15px;
+}
+
+
+/*=======================  Responsse  ================================*/
+
+@media (max-width:768px) {
+
+
+
+
+/* Add styles to the form container */
+.form-container {
+	position: relative;
+  width: 328px;
+  height: 417px;
+  padding: 10px;
+  border-radius: 17px;
+  background: url(../imgs/popupImg/mob/bd-popup-mob.svg) no-repeat #ffffff;
+}
+.class-rtl .form-container{
+	background: url(../imgs/popupImg/mob/bd-popup-mob-arab.svg) no-repeat #ffffff;
+}
+
+.form-container h1{
+	font-size: 30px;
+	padding-left: 20px;
+	padding-top: 18px;
+}
+.class-rtl .form-container h1{
+	padding-right: 20px;
+}
+.form-container input[type=text], .form-container input[type=password] {
+	position: absolute;
+	border-radius: 23px;
+	background-color: #e8e8e8;
+  border: none;
+  left: 19px;
+  text-indent: 10px;
+  font-family: DINCond-Medium;
+	font-size: 21px;
+	color: #B8B4B2;
+}
+
+	
+
+.class-rtl .form-container input[type=text], .class-rtl .form-container input[type=password]{
+	right: 19px;
+	left: unset;
+}
+.form-container input[type=text]::placeholder, .form-container input[type=password]::placeholder {
+	font-family: DINCond-Medium;
+	font-size: 21px;
+	color: #B8B4B2;
+}
+.form-container input[type=password]::-webkit-input-placeholder, .form-container input[type=text]::-webkit-input-placeholder{
+	font-family: DINCond-Medium;
+	font-size: 21px;
+	color: #B8B4B2;
+}
+.form-container input[type=text]:-ms-input-placeholder, .form-container input[type=password]:-ms-input-placeholder{
+	font-family: DINCond-Medium;
+	font-size: 21px;
+	color: #B8B4B2;
+}
+
+.form-container input[type=text] {
+	width: 88%;
+	height: 29px;
+	top: 160px;
+}
+
+.form-container input[type=password] {
+	width: 189px;
+	height: 29px;
+	top: 210px;
+}
+
+
+
+/* The container */
+.container-input {
+  padding-left: 21px;
+  top: 135px;
+  left: 210px;
+  font-size: 15px;
+	line-height: 8px;
+	font-weight: 500;
+}
+.class-rtl .container-input{
+    top: 135px;
+    left: 8px;
+    line-height: 8px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  height: 16px;
+  width: 16px;
+}
+
+/* Style the checkmark/indicator */
+.container-input .checkmark:after {
+  right: 3.6px;
+  top: 0.4px;
+  width:5px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+}
+
+
+
+.form-container .btn.login{
+
+	width: 189px;
+	height: 29px;
+	border-radius: 23px;
+	top: 256px;
+	left: 19px;
+	font-size: 21px;
+}
+.class-rtl .form-container .btn.login{
+	right: 19px;
+}
+.form-container .fogetPassword{
+	content: "Forget Password";
+	font-size: 15px;
+	right: unset;
+	left: 230px;
+	top: 260px;
+}
+.class-rtl .form-container .fogetPassword{
+	left: 20px;
+}
+
+
+.form-container .btn.cancel {
+	top: 10px;
+	right: 5px;
+	padding: 10px 15px;
+  background-color: #ffffff;
+  border-top-right-radius: 17px;
+  background: url("../imgs/popupImg/mob/clos-mob.svg") no-repeat #ffffff;
+}
+
+.class-rtl .form-container .btn.cancel{
+	left: 15px;
+	right: unset;
+}
+
+.link-signUp a{
+
+	font-size: 20px;
+	line-height: 8px;
+	font-weight: 328;
+	top: 113px;
+	left: 45px;
+  
+}
+
+.logWith{
+		top: 312px;
+    font-size: 20px;
+}
+
+.iconsSocial{
+		top: 355px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.iconsSocial a{
+	padding-right: 2px;
+}
+
+}

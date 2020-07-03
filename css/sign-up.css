@@ -1,0 +1,510 @@
+
+.form-signUp
+{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+
+    display: none;
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.4);
+}
+
+.form-container-signup
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    width: 877px;
+    height: 567px;
+    padding: 10px;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 17px;
+    background: url(../imgs/popupImg/bg-popup.svg) no-repeat #fff;
+}
+.class-rtl .form-container-signup
+{
+    left:unset;
+  right: 50%;
+  transform: translate(50%, -50%);
+    background: url(../imgs/popupImg/bg-popup-arab.svg) no-repeat #fff;
+}
+
+.form-container-signup .headerSignUp
+{
+    display: flex;
+}
+.form-container-signup .headerSignUp h1
+{
+    font-family: DIN-Condensed-Web;
+    font-size: 40px;
+
+    margin-top: 32px;
+    margin-left: 57px;
+    padding: 0;
+
+    color: #fff;
+}
+.class-rtl .form-container-signup .headerSignUp h1
+{
+    margin-right: 57px;
+    margin-left: unset;
+     font-family: DIN-Arabic-Cond;
+}
+.closSign
+{
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    padding: 16px 16px;
+
+    cursor: pointer;
+
+    opacity: .8;
+    border: none;
+    background: url('../imgs/popupImg/closePopup.svg') no-repeat #fff;
+}
+.class-rtl .closSign
+{
+    margin-right: 74%;
+}
+
+.div-cont-input
+{
+    margin-top: 100px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+.div-cont-input .div-input .name-input,
+.div-cont-input .div-input .email-input,
+.div-cont-input .div-input .pass-input
+{
+    font-family: DINCond-Medium;
+    font-size: 30px;
+
+    width: 100%;
+    height: 44px;
+
+    text-indent: 24px;
+
+    color: #b8b4b2;
+    border: none;
+    border-radius: 23px;
+    background-color: #e8e8e8;
+}
+.class-rtl .div-cont-input .div-input .name-input,
+.class-rtl .div-cont-input .div-input .email-input,
+.class-rtl .div-cont-input .div-input .pass-input
+{
+    font-family: DIN-Arabic-Cond;
+}
+.div-cont-input .div-input .pass-input
+{
+    width: 69%;
+}
+.class-rtl .div-cont-input .div-input .pass-input
+{
+    width: 67%;
+}
+.div-cont-input .div-input .email-input
+{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.div-cont-input .passDis
+{
+    font-family: DIN-Condensed-Web;
+    font-size: 20px;
+    margin-left: 24px;
+    color: #b4b0ae;
+}
+.class-rtl .div-cont-input .passDis
+{
+   font-family: DIN-Arabic-Cond;
+}
+.class-rtl .div-cont-input .div-input .passDis
+{
+    margin-right: 24px;
+    text-align: right;
+}
+
+
+.form-container-signup .btn
+{
+    margin-bottom: 10px;
+    padding: 16px 20px;
+
+    cursor: pointer;
+
+    opacity: .8;
+    border: none;
+}
+.form-container-signup .btn :hover
+{
+    opacity: 1;
+}
+
+.form-container-signup .btn.login
+{
+    font-family: DIN-Condensed-Web;
+    font-size: 30px;
+
+    width: 100%;
+    height: 45px;
+    padding: 0;
+
+    color: #fff;
+    border-radius: 23px;
+    background-color: #ffa402;
+}
+.class-rtl .form-container-signup .btn.login
+{
+    font-family: DIN-Arabic-Cond;
+}
+
+.form-container-signup .terms
+{
+    margin-top: 30px;
+    margin-left: unset;
+
+    text-align: center;
+}
+
+
+
+
+
+/* The container */
+.container-inputSign
+{
+    font-family: 'DIN-Condensed-Web';
+    font-size: 22px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 12px;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: max-content;
+    margin: 0;
+    margin-left: 47px;
+    padding-left: 35px;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    color: #ffa402;
+}
+.class-rtl .container-inputSign
+{
+    margin-left: 15px;
+    padding-right: 7px;
+    font-family: DIN-Arabic-Cond;
+}
+
+/* Hide the browser's default checkbox */
+.container-inputSign input
+{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkSign
+{
+    position: absolute;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+    margin-top: -4px;
+
+    border: 2px solid orange;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.container-inputSign:hover input ~ .checkmarkSign
+{
+    background-color: #ddd;
+}
+
+/* When the checkbox is checked, add a white background */
+.container-inputSign input:checked ~ .checkmarkSign
+{
+    border: 2px solid #ffa402;
+    background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkSign:after
+{
+    position: absolute;
+
+    display: none;
+
+    content: '';
+}
+
+/* Show the checkmark when checked */
+.container-inputSign input:checked ~ .checkmarkSign:after
+{
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-inputSign .checkmarkSign:after
+{
+    right: 4.8px;
+
+    width: 9px;
+    height: 15px;
+
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
+
+    border: solid #ffa402;
+    border-width: 0 3px 3px 0;
+}
+
+.form-container-signup input[type=text]:focus,
+.form-container-signup input[type=password]:focus
+{
+    outline: none;
+    background-color: #ddd;
+}
+
+.form-container-signup input[type=text]::placeholder,
+.form-container-signup input[type=password]::placeholder
+{
+    font-family: DINCond-Medium;
+    font-size: 30px;
+
+    color: #b4b0ae;
+}
+.class-rtl .form-container-signup input[type=text]::placeholder,
+.class-rtl .form-container-signup input[type=password]::placeholder
+{
+    font-family: DIN-Arabic-Cond;    
+}
+.form-container-signup input[type=password]::-webkit-input-placeholder,
+.form-container-signup input[type=text]::-webkit-input-placeholder
+{
+    font-family: DINCond-Medium;
+    font-size: 30px;
+
+    color: #b4b0ae;
+}
+.class-rtl .form-container-signup input[type=password]::-webkit-input-placeholder,
+.class-rtl .form-container-signup input[type=text]::-webkit-input-placeholder
+{
+    font-family: DIN-Arabic-Cond;
+}
+.form-container-signup input[type=text]:-ms-input-placeholder,
+.form-container-signup input[type=password]:-ms-input-placeholder
+{
+    font-family: DINCond-Medium;
+    font-size: 30px;
+
+    color: #b4b0ae;
+}
+.class-rtl .form-container-signup input[type=text]:-ms-input-placeholder,
+.class-rtl .form-container-signup input[type=password]:-ms-input-placeholder
+{
+    font-family: DIN-Arabic-Cond;
+}
+
+
+
+@media(max-width: 768px)
+{
+    .form-container-signup
+    {
+        position: relative;
+
+        width: 328px;
+        height: 417px;
+        padding: 10px;
+
+        border-radius: 17px;
+        background: url(../imgs/popupImg/mob/bd-popup-mob.svg) no-repeat #fff;
+    }
+
+    .class-rtl .form-container-signup{
+        background: url(../imgs/popupImg/mob/bd-popup-mob-arab.svg) no-repeat #fff;
+    }
+    .div-cont-input
+    {
+        margin-top: 75px;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .class-rtl .div-input
+    {
+        text-align: right;
+    }
+    .form-container-signup .headerSignUp h1
+    {
+        font-size: 30px;
+
+        margin-top: 10px;
+        margin-left: 17px;
+        padding: 0;
+
+        color: #fff;
+    }
+    .class-rtl .form-container-signup .headerSignUp h1
+    {
+        margin-right: 17px;
+    }
+
+    /* Full-width input fields */
+    .form-container-signup input[type=text],
+    .form-container-signup input[type=password]
+    {
+        left: 19px;
+
+        text-indent: 10px;
+
+        border: none;
+        border-radius: 23px;
+        background-color: #e8e8e8;
+    }
+    .form-container-signup input[type=text]::placeholder,
+    .form-container-signup input[type=password]::placeholder
+    {
+        font-family: DINCond-Medium;
+        font-size: 21px;
+
+        color: #b8b4b2;
+    }
+    .form-container-signup input[type=password]::-webkit-input-placeholder,
+    .form-container-signup input[type=text]::-webkit-input-placeholder
+    {
+        font-family: DINCond-Medium;
+        font-size: 21px;
+
+        color: #b8b4b2;
+    }
+    .form-container-signup input[type=text]:-ms-input-placeholder,
+    .form-container-signup input[type=password]:-ms-input-placeholder
+    {
+        font-family: DINCond-Medium;
+        font-size: 21px;
+
+        color: #b8b4b2;
+    }
+
+    .div-cont-input .div-input .email-input
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-container-signup .btn.closSign
+    {
+        width: 21px;
+        margin-top: 5px;
+        margin-right: 5px;
+        padding: 0;
+
+        background: url('../imgs/popupImg/mob/clos-mob.svg') no-repeat #fff;
+        background-color: #fff;
+    }
+    .class-rtl .form-container-signup .btn.closSign
+    {
+        margin-right: 59%;
+    }
+
+
+    .div-cont-input .div-input .name-input,
+    .div-cont-input .div-input .email-input,
+    .div-cont-input .div-input .pass-input
+    {
+        font-size: 21px;
+
+        height: 29px;
+
+        text-indent: 10px;
+    }
+
+    /* Create a custom checkbox */
+    .checkmarkSign
+    {
+        width: 16px;
+        height: 16px;
+    }
+    .container-inputSign
+    {
+        font-size: 15px;
+        line-height: 9px;
+
+        bottom: 3px;
+
+        margin-left: 5px;
+        padding-left: 22px;
+    }
+    .class-rtl .container-inputSign
+    {
+        margin-left: -7px;
+        padding-right: 0;
+        padding-left: 23px;
+    }
+
+    /* Style the checkmark/indicator */
+    .form-container-signup .checkmarkSign:after
+    {
+        top: .4px;
+        right: 3.6px;
+
+        width: 5px;
+        height: 10px;
+
+        border-width: 0 2px 2px 0;
+    }
+
+    .div-cont-input .div-input .pass-input
+    {
+        width: 58%;
+    }
+    .class-rtl .div-cont-input .div-input .pass-input
+    {
+        width: 58%;
+    }
+
+    .div-cont-input .passDis
+    {
+        font-size: 13px;
+    }
+    .form-container-signup .btn.login
+    {
+        font-size: 21px;
+
+        height: 28px;
+    }
+    .form-container-signup .terms
+    {
+        margin-top: 9px;
+    }
+}

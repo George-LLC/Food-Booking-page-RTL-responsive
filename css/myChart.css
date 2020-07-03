@@ -1,0 +1,456 @@
+
+.form-popup1 {
+   display: none;
+  position: fixed;
+  top: 0; 
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+/* Add styles to the form container */
+.form-container1 {
+  position: relative;
+  width: 877px;
+  height: 910px;
+  padding: 10px;
+  border-radius: 17px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../imgs/popupImg/bg-popup.svg) no-repeat #ffffff;
+}
+
+.class-rtl .form-container1{
+	left: unset;
+	right: 50%;
+	transform: translateX(50%);
+	background: url(../imgs/popupImg/bg-popup-arab.svg) no-repeat #ffffff;
+}
+
+.form-popup1 .form-container1 h1.h1-1{
+	width: max-content;
+	margin-top: 35px;
+  margin-left: 45px;
+  font-size: 40px;
+  color: #ffffff;
+  font-family: DIN-Condensed-Web;
+}
+
+.class-rtl .form-popup1 .form-container1 h1.h1-1{
+	margin-left: unset;
+	margin-right: 45px;
+	 font-family: DIN-Arabic-Cond;
+}
+
+.form-container1 .closeBtn {
+	float: right;
+  margin-top: -70px;
+  margin-right: 25px;
+  width: 33px;
+  height: 33px;
+  background: url("../imgs/popupImg/closePopup.svg");
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: #ffffff;
+}
+
+.class-rtl .form-container1 .closeBtn{
+	float: left;
+	margin-right: unset;
+	margin-left: 25px;
+	background: url("../imgs/popupImg/closePopup.svg");
+}
+
+
+
+.form-popup1 .form-container1 .row h1.h1-2{
+	font-size: 30px;
+	font-family: DIN-Condensed-Web;
+	color: #FFA402;
+	margin-left: 35px;
+}
+.class-rtl .form-popup1 .form-container1 .row h1.h1-2{
+		margin-left: unset;
+		margin-right: 38px;
+		font-family: DIN-Arabic-Cond;
+}
+
+
+
+/*/////////////////////////////   Scroll bar Desighn  Add items right side Images with prices  /////////////////////////////*/
+.adds_item{
+	height: 720px;
+	overflow-y: scroll;
+	direction: rtl;	
+}
+.class-rtl .adds_item{
+	direction: ltr;
+}
+
+.adds_item::-webkit-scrollbar {
+  width: 25px;
+  background-image: url(../imgs/mycart/skrocllBack.svg);
+  background-size: 72% 100%;
+}
+
+.adds_item::-webkit-scrollbar-thumb{ 
+  border-right: 7px solid #FFA402;
+}
+
+/*/////////////////////////////   Scroll bar Desighn  Add items left side without Images with prices  /////////////////////////////*/
+
+.items_scroll{
+	height: 540px;
+	overflow-y: scroll;
+	direction: ltr;	
+}
+.class-rtl .items_scroll{
+	direction: rtl;
+}
+
+.items_scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.items_scroll::-webkit-scrollbar-thumb{ 
+  border-left: 7px solid #FFA402;
+}
+
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+
+.item{
+	padding-top: 0!important;
+}
+
+.adds_item .item .name_dic{
+		font-size: 20px;
+		width: unset;
+		color: #1D2734;
+		font-family: DIN-Condensed-Web;
+}
+.class-rtl .adds_item .item .name_dic{
+	float: right!important;
+	font-family: DIN-Arabic-Cond;
+}
+
+.adds_item .item .card-img-top{
+	height: 205px;
+	margin-bottom: 10px;
+}
+
+.adds_item .item .plusImg{
+	position: absolute;
+	content: url(../imgs/mycart/plusImg.svg);
+  right: 25px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.class-rtl .adds_item .item .plusImg{
+	right: unset;
+	left:25px;
+}
+
+.adds_item .item .cart_item_price{
+	width: unset;
+	font-size: 20px;
+	color: #1D2734;
+	font-weight: bold;
+	font-family: DIN-Condensed-Web;
+}
+.class-rtl .adds_item .item .cart_item_price{
+	float: left!important;
+	font-family: DIN-Arabic-Cond;
+}
+
+
+
+.form-popup1 .add_items{
+		margin-top: 44px;
+}
+.form-popup1 .div-row {
+	padding-left: 80px;
+	padding-right: 230px;
+	margin-bottom: 15px;
+}
+.class-rtl .form-popup1 .div-row{
+	padding-left: 230px;
+	padding-right: 80px;
+}
+.form-popup1 .div-row .item_add_elem, .item_price, .item_total{
+	text-align: left;
+	font-family: DINCond-Medium;
+	font-size: 20px;
+}
+.class-rtl .form-popup1 .div-row .item_add_elem{
+	text-align: right;
+	font-family: DIN-Arabic-Cond;
+}
+.item_price, .item_total{
+	display: inline-block;	
+}
+.class-rtl .item_price{
+	float: right;
+	font-family: DIN-Arabic-Cond;
+}
+.item_total{
+	float: right;
+}
+.class-rtl .item_total{
+	float: left;
+	font-family: DIN-Arabic-Cond;
+}
+.form-popup1 .div-row .plus_minus{
+	position: relative;
+  height: 30px;
+}
+.form-popup1 .div-row .minus{
+	position: absolute;
+  right: 55px;
+}
+.class-rtl .form-popup1 .div-row .minus{
+		right: unset;
+		left: 55px;
+}
+.form-popup1 .div-row .minus:after{
+	content: url(../imgs/mycart/minus.svg);
+}
+.form-popup1 .div-row .plus{
+	position: absolute;
+  right: 0;
+}
+.class-rtl .form-popup1 .div-row .plus{
+right: unset;
+left: 0;
+}
+.form-popup1 .div-row .plus:after{
+	content: url(../imgs/mycart/plus.svg);
+}
+.form-popup1 .div-row .numBook{
+	position: absolute;
+  right: 28px;
+  width: 27px;
+	border: 0;
+	text-align: center;
+	font-size: 20px;
+	font-family: DIN-Condensed-Web;
+	display: inline-block;
+}
+.class-rtl .form-popup1 .div-row .numBook{
+	right: unset;
+	left: 28px;
+	font-family: DIN-Arabic-Cond;
+}
+
+
+.form-popup1 .addCheckButtons{
+		position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+ }
+ .form-popup1 .addButton, .form-popup1 .checkoutButton{
+ 	font-size: 25px;
+ 	font-family: DIN-Condensed-Web;
+ 	border-radius: 20px;
+ 	border: 2px #FFA402 solid;
+ 	width: 150px;
+ 	height: 40px;
+ 	color: #FFA402;
+ 	cursor: pointer;
+ }
+
+ .form-popup1 .addButton{
+	background-color: #FFFFFF;
+	color: #FFA402;
+ }
+
+ .class-rtl .form-popup1 .addButton{
+ 	margin-left: 40px;
+ 	font-family: DIN-Arabic-Cond;
+ }
+
+ .form-popup1 .addButton:hover{
+	background-color: #FFA402;
+	color: #FFFFFF;
+ }
+
+ .form-popup1 .checkoutButton{
+ 	background-color: #FFA402;
+ 	color: #FFFFFF;
+ 	margin-left: 40px;
+ }
+
+ .class-rtl .form-popup1 .checkoutButton{
+ 	margin-left: unset;
+ 	font-family: DIN-Arabic-Cond;
+ }
+
+ .form-popup1 .checkoutButton:hover{
+ 	background-color: #FFFFFF;
+ 	color: #FFA402;
+ }
+
+
+
+
+
+ @media(max-width: 768px) {
+
+ 	.form-container1{
+ 		width: 324px;
+    height: 710px; 	
+ 		background: url(../imgs/popupImg/mob/bd-popup-mob.svg) no-repeat #ffffff;
+ 	}
+ 	.class-rtl .form-container1{
+ 		background: url(../imgs/popupImg/mob/bd-popup-mob-arab.svg) no-repeat #ffffff;
+ 	}
+ 	.form-container1 .closeBtn{
+ 		margin-top: -55px;
+    	margin-right: 0px;	    
+	    border-top-right-radius: 17px;
+ 		background: url(../imgs/popupImg/mob/clos-mob.svg) no-repeat;
+ 	}
+ 	.class-rtl .form-container1 .closeBtn{
+ 		 margin-right: unset;	    
+     margin-left: 5px;
+     background: url(../imgs/popupImg/mob/clos-mob.svg) no-repeat;	  
+ 	}
+ 	.form-popup1 .form-container1 h1.h1-1{
+ 		margin-top: 15px;
+	    margin-left: 20px;
+	    font-size: 30px;
+ 	}
+ 	.class-rtl .form-popup1 .form-container1 h1.h1-1{
+	    margin-left: unset;
+	    margin-right: 20px;
+ 	}
+ 	.form-popup1 .div-row{
+ 		padding-left: 32px; 
+    	padding-right: 24px;
+ 	}
+ 	.class-rtl .form-popup1 .div-row{
+		padding-right: 32px; 
+    	padding-left: 24px;
+ 	}
+
+
+
+
+ 	/*//////////////////////   Scroll bar Desighn   for plus and minus selected items TOP scroll //////////////////////*/
+.form-popup1 .items_scroll{
+	height: 310px;
+	overflow-y: scroll;
+	direction: ltr;	
+}
+.class-rtl .form-popup1 .items_scroll{
+		direction: rtl;	
+}
+.items_scroll::-webkit-scrollbar {
+  width: 27px;
+  background-image: url(../imgs/mycart/skrocllBack.svg);
+  background-size: 70% 350%;
+}
+.class-rtl .items_scroll::-webkit-scrollbar{
+		width: 27px;
+ 		background-size: 130% 350%;;
+}
+.items_scroll::-webkit-scrollbar-thumb{ 
+  border-left: 4px solid #FFA402;
+}
+.class-rtl .items_scroll::-webkit-scrollbar-thumb{
+	border-right: 4px solid #FFA402;
+	border-left: unset;
+}
+
+
+/*////////////////   Bottom scroll bar   ////////////////////////////*/
+.adds_item{
+	width: 320px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+  white-space: nowrap;
+   display: inline-block;
+   height: 157px;
+   margin-left: -8px;
+   direction: ltr;
+}
+.adds_item::-webkit-scrollbar-thumb{ 
+  border-left: unset;
+  border-right: 4px solid #FFA402;
+}
+.class-rtl .adds_item::-webkit-scrollbar-thumb{
+	  border-right: unset;
+  	border-left: 4px solid #FFA402;
+}
+.adds_item::-webkit-scrollbar{
+	  background-size: 125% 500%;
+	  width: 20px;
+    display: none;
+}
+.class-rtl .adds_item::-webkit-scrollbar{
+	background-size: 70% 500%;
+    width: 21px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.class-rtl .adds_item::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.adds_item {
+  -ms-overflow-style: none;
+}
+.class-rtl .adds_item {
+  -ms-overflow-style: none;
+}
+
+
+
+.adds_item .item .card-img-top{
+	height: 108px;
+}
+
+.adds_item .item .plusImg{
+	content: url(../imgs/mycart/mob/mobPlus.svg); 
+}
+.adds_item .item .name_dic, .adds_item .item .cart_item_price{
+	font-size: 15px;
+	color: #434343;
+}
+
+.item {
+	padding: 5px;
+	display: inline-block;
+}
+
+.form-popup1 .addCheckButtons{
+	bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.form-popup1 .addButton, .form-popup1 .checkoutButton{
+	width: 120px;
+	height: 30px;
+	font-size: 18px;
+}
+.form-popup1 .checkoutButton{
+	margin-left: 20px;
+}
+.class-rtl .form-popup1 .checkoutButton{
+	margin-left: unset;	
+}
+.class-rtl .form-popup1 .addButton{
+	margin-left: 20px;
+}
+
+
+ }

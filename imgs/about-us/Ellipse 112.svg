@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" width="31" height="31">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #f97e3b;stroke-width: 2 } 
+		.shp1 { fill: none;stroke: #f97e3b;stroke-linecap:round;stroke-width: 2 } 
+	</style>
+	<path id="Ellipse 112 copy" class="shp0" d="M15.5 31C6.93 31 0 24.07 0 15.5C0 6.93 6.93 0 15.5 0C24.07 0 31 6.93 31 15.5C31 24.07 24.07 31 15.5 31Z" />
+	<path id="Line 23 copy" class="shp1" d="M6.5 15.5L24.5 15.5L6.5 15.5Z" />
+	<path id="Line 24 copy" class="shp1" d="M15.5 6.5L15.5 24.5L15.5 6.5Z" />
+</svg>

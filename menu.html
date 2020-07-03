@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>FleyFley</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/popupStyle.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+  <link rel="stylesheet" href="css/addItemsCart.css">
+	<link rel="stylesheet" href="css/myChart.css">
+	<link rel="stylesheet" href="css/order.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="46">
+	<header>
+		<div class="lang-container">
+			<div class="lang-bar">
+				<ul>
+					<li><a class="eng" href="menu.html">English</a></li>
+					<li><a class="arab" href="menu_arab.html">العربية</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top site-header position-relative">
+			<div class="mx-auto header-logo position-absolute">
+				<a href="index.html"><img src="imgs/logo.svg"></a>
+			</div>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			 <span id="bbb" class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse position-absolute pt-4 pt-lg-0" id="navbarCollapse">
+				<ul class="navbar-nav">
+					<li class="nav-item active"> <a class="nav-link" href="about_us.html">About us</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="menu.html">Menu</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="findStore.html">Find a store</a> </li>
+					<li class="nav-item order-first order-md-last"> <a class="btn" onclick="openPopup()">SIGN UP/LOGIN</a> </li>
+				</ul>
+				<ul class="list-unstyled text-small social_links d-flex justify-content-center d-md-none">
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/instagram_header.svg"></a>
+					</li>
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/twitter_header.svg"></a>
+					</li>
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/fb_header.svg"></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main role="main" class="main-content">
+		<div class="top-main"></div>
+		<div id="myCarousel" class="carousel slide half-carousel" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item about active">
+					<div class="container mw-100 half_slider">
+						<div class="row">
+							<div class="col-md-6 col-text">
+								<div class="carousel-caption text-justify">
+									<h1 class="h-1">Example headline.</h1>
+									<p class="p-1">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p class="p-2"> <a class="btn btn-lg btn-primary" href="#" role="button">Order now</a> </p>
+								</div>
+							</div>
+							<div class="col-md-6 col-img"> <img class="first-slide" src="imgs/shishtowk.jpg" alt="First slide"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item about">
+					<div class="container mw-100 half_slider">
+						<div class="row">
+							<div class="col-md-6 col-text">
+								<div class="carousel-caption text-justify">
+									<h1 class="h-1">Example headline.</h1>
+									<p class="p-1">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p class="p-2"> <a class="btn btn-lg btn-primary" href="#" role="button">Order now</a> </p>
+								</div>
+							</div>
+							<div class="col-md-6 col-img"> <img class="first-slide" src="imgs/shishtowk.jpg" alt="First slide"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item about">
+					<div class="container mw-100 half_slider">
+						<div class="row">
+							<div class="col-md-6 col-text">
+								<div class="carousel-caption text-justify">
+									<h1 class="h-1">Example headline.</h1>
+									<p class="p-1">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p class="p-2"> <a class="btn btn-lg btn-primary" href="#" role="button">Order now</a> </p>
+								</div>
+							</div>
+							<div class="col-md-6 col-img"> <img class="first-slide" src="imgs/shishtowk.jpg" alt="First slide"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+		</div>
+		<div class="search-panel fixed-bottom">
+			<div class="input">
+				<input type="text" placeholder="Search Your Nearby Store to Order a Pickup"> </div>
+			<div class="float-right buy-now position-relative" onclick="openMyCart()"> View Your Cart
+			<div class="num_card">0</div> 
+				<img class="buy-cart d-lg-block d-none" src="imgs/card.svg"> <img class="buy-cart d-lg-none key" src="imgs/card_mob.svg"> <img class="buy-cart d-lg-none ml-5" src="imgs/about-us/search_p_icon.svg"> </div>
+		</div>
+		<div class="mt-3">
+
+
+			<ul class="nav nav-tabs" id="navbar-example2">
+				<li class="nav-item not-hover"> <a class="nav-link removedt active" data-toggle="tab" href="#home">SALAD</a> </li>
+				<li class="nav-item not-hover"> <a class="nav-link removedt" data-toggle="tab" href="#menu1">SOUP</a> </li>
+				<li class="nav-item not-hover"> <a class="nav-link removedt" data-toggle="tab" href="#menu2">KEBAB</a> </li>
+				<li class="nav-item not-hover"> <a class="nav-link removedt" data-toggle="tab" href="#menu3">SPECIAL</a> </li>
+				<li class="nav-item not-hover"> <a class="nav-link removedt" data-toggle="tab" href="#menu4">FLEY IT UP</a> </li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div id="home" class="tab-pane active removeClass">
+					<div class="row">
+						<div class="col-12 p-lg-3 pb-1 pt-3 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat <a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Salad</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu1" class="tab-pane fade removeClass">
+					<div class="row">
+						<div class="col-12 p-lg-3 pb-1 pt-3 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SOUP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu2" class="tab-pane fade removeClass">
+					<div class="row">
+						<div class="col-12 p-lg-3 pb-1 pt-3 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">Kebab</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu3" class="tab-pane fade removeClass">
+						<div class="row">
+						<div class="col-12 p-lg-3 pb-1 pt-3 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SPECIAL</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">SPECIAL</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div id="menu4" class="tab-pane fade removeClass">
+								<div class="row">
+						<div class="col-12 p-lg-3 pb-1 pt-3 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">FLEY IT UP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 p-lg-3 pb-1 col-lg-3">
+							<div class="row">
+								<div class="col-lg-12 col-5"> <img src="imgs/about-us/Mask_Group_5_is_pattern.png" class="card-img-top" alt="..."> </div>
+								<div class="col-lg-12 col-7">
+									<div class="w-50 float-left tandp tandp_name">FLEY IT UP</div>
+									<div class="w-50 float-left text-right tandp tandp_price">8.45 KD</div>
+									<div class="w-100 item-desc position-relative">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offica deserunt, Excepteur sint occaecat<a ></a></div>
+								</div>
+							</div>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- FOOTER -->
+	<footer class="foter-botom">
+		<div class="row m-0 d-flex align-items-center bd-highlight">
+			<div class="col-4 footer_logo_big_mob"> <img src="imgs/footer_logo.svg"> </div>
+			<div class="col-12 col-md-4 footer_menu pr-0">
+				<div class="row">
+					<div class="col-3 single-menu">
+						<ul class="list-unstyled text-small">
+							<li><a href="about_us.html">ABOUT US</a></li>
+							<li><a href="findStore.html">FINA A STORE</a></li>
+							<li><a href="#">WORK WITH US</a></li>
+						</ul>
+					</div>
+					<div class="col-3 single-menu">
+						<ul class="list-unstyled text-small">
+							<li><a href="menu.html">MENU</a></li>
+							<li><a href="#">RETAIL</a></li>
+						</ul>
+					</div>
+					<div class="col-3 single-menu">
+						<ul class="list-unstyled text-small">
+							<li><a href="#">CONTACT US</a></li>
+							<li><a href="#">LIVE CHAT</a></li>
+						</ul>
+					</div>
+					<div class="col-3 single-menu">
+						<ul class="list-unstyled text-small">
+							<li><a class="eng" href="menu.html">English</a></li>
+							<li><a class="arab" href="menu_arab.html">Arabic</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 pl-0">
+				<ul class="list-unstyled text-small social_links d-flex justify-content-center">
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/instagram.svg"></a>
+					</li>
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/twitter.svg"></a>
+					</li>
+					<li>
+						<a class="text-muted" href="#"><img src="imgs/fb.svg"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<p class="float-right">
+				<a class="btt" href="#"><img src="imgs/btt.svg"></a>
+			</p>
+			<p class="float-left footer_fley">©FleyFley 2020</p>
+			<p class="d-md-none d-flex justify-content-center">
+				<a href="index.html" class="logo_mob_center"><img src="imgs/footer_logo_mob.svg"></a>
+			</p>
+		</div>
+	</footer>
+
+
+
+
+
+<!-- =====================================   ADD ITEMS CART   =================================== -->
+
+
+
+
+<div id="addItemsCart" class="form-addItemsCart">
+	<div class="addItemsCart-container">
+			<h1 class="addItemsCart-h1">ADD ITEM <br class="d-md-none"> CHOICE</h1>
+			<button type="button" class="btn closeAddItems" onclick="closeAddItemsCart()"></button>
+			<div class="row itemDisc pl-md-5">
+							<div class="col-md-6 col-8 order-1">
+																			<div class="item_add_elem">Excepteur sint occaecat</div>
+																			<span>Excepteur sint occaecat cupidatat non</span>
+							</div>
+																		<div class="col-md-3 col-12 text-md-center order-md-2 order-3 mt-md-0 mt-3">
+																			<div class="plus_minus">
+																				<a href="" class="minus"></a>
+																				<input type="text" placeholder="1" class="numBook">
+																				<a href="" class="plus"></a>
+																			</div>
+																		</div>
+							<div class="col-md-3 col-4 text-md-center order-md-3 order-2">
+																				<div class="item_price">KD 14.95</div>
+							</div>
+				</div>
+				<div class="row dropDown-1">
+										<div class="col-12">
+											<div class="header-dropdown1 mt-3 mt-md-5 mb-md-3" onclick="dropdown1()">Your Choice of  (Choose 1)</div>
+											
+										</div>
+											<div class="col-12 dropdown_menu1 pl-md-5 pr-md-4">
+													<form>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> 7 UP (2 Liters)
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Diet Pepsi (2 Liters)
+												    </label>
+												    <label class="col-md-3 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Mirinda (2 Liters)
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Pepsi (2 Liters)
+												    </label>
+												  </form>
+											</div>
+				</div>
+				<div class="row dropDown-2 mt-1">
+										<div class="col-12">
+											<div class="header-dropdown2 mt-3 mt-md-3 mb-md-3" onclick="dropdown2()">Add on  (Choose items from the list)</div>
+											
+										</div>
+											<div class="col-12 dropdown_menu2 pl-md-5 pr-md-4">
+													<form>
+
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Dakkous Sauce (0.50)
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Garlic Sauce (0.35)
+												    </label>
+												    <label class="col-md-3 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Grilled 
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Intakli Bread (0.35)
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Mohamara (1.20)
+												    </label>
+												    <label class="col-md-3 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Olives & Pickles Platter(0.95) 
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Cheery Sauce (Cherry & Yogurt) (0.15)
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Green Sauce (Mint & Veggies) (0.15)
+												    </label>
+												    <label class="col-md-3 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Kababji Sauce (Special Kababji Tahina) (0.15) 
+												    </label>
+												    <label class="col-md-4 col-12 radio-inline">
+												      <input type="radio" name="optradio" class="mr-1"> Spicy Sauce (Special Spicy Mix) (0.15)
+												    </label>
+												  </form>
+											</div>
+				</div>
+				<div class="specRequset d-md-none d-block">
+					<div class="text"><a></a>Special Request? <p>(Optional)</p></div>
+					<input type="text" placeholder="Tap to input request">
+				</div>
+
+				<div class="col-12 pl-md-5 pr-md-4 btnAddCart">
+					<button class="addCart" onclick="closeAddItemsCart(); openMyCart(); removeCard()">ADD TO CART</button>
+				</div>
+			</div>
+			
+	</div>
+
+
+
+
+
+
+
+
+
+<!-- ============================   POPUP    CART   ==========================-->
+
+
+<div id="myChart" class="form-popup1">
+	<div class="form-container1">
+			<h1 class="h1-1">MY CART</h1>
+			<button type="button" class="btn closeBtn" onclick="closeMyCart()"></button>
+			<div class="row ">
+					<div class="col-md-7 col-12 add_items">
+						<div class="row items_scroll">
+							<div class="col">
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>
+											</div>
+
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>								
+											</div>
+
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>								
+											</div>
+
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>								
+											</div>
+
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>								
+											</div>
+												<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>								
+											</div>
+
+											<div class="row div-row">
+												<div class="col-12">
+													<div class="item_add_elem">Excepteur sint occaecat</div>
+													<div class="plus_minus">
+														<div class="item_price">8.45 KD</div>
+														<a href="" class="minus"></a>
+														<input type="text" placeholder="1" class="numBook">
+														<a href="" class="plus"></a>
+													</div>
+												</div>
+											</div>
+											</div>
+									</div>
+											<div class="row div-row mt-1 mb-1">
+												<div class="col-12">
+													  <div class="item_price">Total</div>
+														<div class="item_total">8.45 KD</div>
+												</div>
+											
+						  </div>
+							<div class="row addCheckButtons d-md-block d-none">
+								<button type="button" class="addButton" onclick="closeMyCart()">ADD ITEMS</button>
+								<button class="checkoutButton" onclick="closeMyCart(); openOrder(); removeCard()">CHECK OUT</button>
+								
+							</div>
+						
+					</div>
+			<div class="col-md-5 col-12">
+					<div class="row">
+						<h1 class="h1-2 d-md-block d-none">Adds on</h1> 
+						<h1 class="h1-2 d-md-none d-block">Adds on</h1>
+					</div>
+					<div class="row adds_item">
+						
+					
+					<div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Salad.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  <div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Juce.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  <div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Juce.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  <div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Juce.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  <div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Juce.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  <div class="p-md-3 pb-1 col-6 col-md-12 item">
+								<div class="row">
+									<div class="col-12"> 
+										<img src="imgs/mycart/Juce.jpg" class="card-img-top" alt="..."> 
+										<a class="plusImg"></a>
+									</div>
+									<div class="col-12 pt-0">
+										<div class="w-70 float-left name_dic">Excepteur sint occa</div>
+										<div class="w-30 float-right text-right cart_item_price">8.45 KD</div>
+									</div>
+								</div>
+				  </div>
+				  </div>
+			</div>
+			<div class="row addCheckButtons d-md-none d-block">
+								<button type="button" class="addButton" onclick="closeMyCart()">ADD ITEMS</button>
+								<button class="checkoutButton" onclick="closeMyCart(); openOrder(); removeCard()">CHECK OUT</button>
+								
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<!-- ==================================POPUP ORDER===========================   -->
+
+<div id="order" class="form-order">
+	<div class="order-container">
+			<h1 class="order-h1">ORDER<br>CONFORMATION</h1>
+			<button type="button" class="btn closeOrder" onclick="closeOrder()"></button>
+			<div class="row order-text">
+				<p class="order-p">Dear Customer,<br>your order has been successfully processed. Our team member will service your order very soon...</p>
+			</div>
+			<div class="row order-img">
+				<img id="ord-img" src="imgs/order/order-img.svg" alt="">
+				<img id="ord-img-mob" src="imgs/order/order-img-mob.svg" alt="">
+				<a href="about_us.html"><button class="btn order-btn-img">LEARN MORE ABOUT FLEYFLEY</button></a>
+			</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- /////////////////////////    Sign Up   Log In   ///////////////////////////////// -->
+
+
+
+
+    <!-- ====================================   POPUP LOGIN   ======================= -->
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>LOGIN</h1>
+
+        <div class="link-signUp"><a href="#" onclick="closeForm(); openSignUp()">Don't have an account? Sign Up Now</a></div>
+
+        <input type="text" autofocus placeholder="Enter Email" name="email" required>
+
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label class="container-input">Remember me
+          <input type="checkbox" class="check">
+          <span class="checkmark"></span>
+        </label>
+        
+
+        <button type="submit" class="btn login">LOGIN</button>
+        <a class="fogetPassword">Forget Password</a>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+        <!-- <img src="imgs/popupImg/closePopup.svg" alt="X"> -->
+        <p class="logWith">Login with</p>
+        <div class="iconsSocial">
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/fb.svg" alt="fb"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/fb-mob.svg" alt="fb"></a>
+
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/instagram.svg" alt="instagram"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/instagram-mob.svg" alt="instagram"></a>
+
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/g+.svg" alt="g+"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/g+mob.svg" alt="g+"></a>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <!-- ====================================   POPUP SIGN IN   ======================= -->
+<div class="form-signUp" id="formSignUp">
+  <form class="form-container-signup">
+     <!-- <div class="modal-content"> -->
+    <div class="headerSignUp">
+      <h1>SIGN UP</h1>
+      <button type="button" class="btn closSign" onclick="closeFormSignUp()"></button>
+    </div>
+    <div class="div-cont-input">
+      <div class="div-input">
+        <input type="text" class="name-input" placeholder="Name" name="Name" required>
+        <input type="text" class="email-input" placeholder="Email" name="email" required>
+        <input type="password" class="pass-input" placeholder="Password" name="password" required>
+        <label class="container-inputSign">Remember me
+          <input type="checkbox" class="checkSign">
+          <span class="checkmarkSign"></span>
+        </label>
+        <p class="passDis">Password must be at least 8 charactors</p>
+      </div>
+      <button type="submit" class="btn login">SIGN UP</button>
+      <p class="passDis terms">Tearms & Conditions</p>
+    </div>
+  <!-- </div> -->
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+	<!-- =======================   Bootstrap core JavaScript    =========================================== -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	 <script type="text/javascript" src="js/popup.js"></script>
+    <script src="js/sign-up.js"></script>
+
+	<script src="js/addItemsCart.js"></script>
+	<script src="js/myChart.js"></script>
+	<script src="js/order.js"></script>
+
+	<script type="text/javascript">
+		var coll = document.getElementsByClassName("navbar-toggler-icon");
+		coll[0].addEventListener("click", function() {
+			this.classList.toggle("menuX");
+		});
+
+		searchBarMobile();
+
+		window.addEventListener('resize',function(){
+			searchBarMobile()
+		});
+
+		function searchBarMobile(){
+			var dataToggle = document.getElementsByClassName("removedt");
+			var widthScreen=document.body.clientWidth;  
+     	    var className = document.getElementsByClassName("removeClass");
+			if (window.matchMedia("(max-width: 980px)").matches){				
+				for (var i = 0; i < dataToggle.length; i++) {				
+					dataToggle[i].removeAttribute("data-toggle")
+				}
+				
+				for (var i = 0; i < className.length; i++) {				
+				className[i].classList.remove("tab-pane", "fade");
+				}				  
+				
+			}else{
+				for (var i = 0; i < dataToggle.length; i++) {				
+					dataToggle[i].setAttribute("data-toggle", "tab")
+				}
+				for (var i = 0; i < className.length; i++) {
+					className[0].classList.add("tab-pane");
+					if (i+1 < className.length) {
+						className[i+1].classList.add("tab-pane", "fade");
+					}					
+				}	
+			}			
+		};
+
+		window.onscroll = function() {fixSearchBar()};
+		var header = document.getElementById("navbar-example2");
+		var sticky = header.offsetTop;
+		
+
+		function fixSearchBar() {
+		  if (window.pageYOffset > 117+sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+
+		var myChart = document.getElementById("myChart");
+		var order = document.getElementById("order");
+		var form = document.getElementById("formSignUp");
+  	var myform = document.getElementById("myForm");
+  	var addItemsCart = document.getElementById("addItemsCart");
+
+ 		window.onclick = function(event) {  
+			if (event.target == addItemsCart) {
+					addItemsCart.style.display = "none";
+					document.body.style.overflow="unset";
+			}
+		  if (event.target == myChart) {
+		    myChart.style.display = "none";
+		    document.body.style.overflow="unset";
+		  }
+		  if (event.target == order) {
+		    order.style.display = "none";
+		    document.body.style.overflow="unset";
+		  }
+		  if (event.target == form) {
+		    form.style.display = "none";
+		    document.body.style.overflow="unset";
+		  }
+		  if (event.target == myform) {
+		    myform.style.display = "none";
+		    document.body.style.overflow="unset";
+		  }
+		}
+
+
+
+
+	</script>
+	
+</body>
+
+</html>

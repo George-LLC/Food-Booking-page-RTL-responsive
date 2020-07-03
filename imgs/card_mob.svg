@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 23" width="21" height="23">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-343 -859L71 -859L71 2131L-343 2131Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffcc33;stroke-width: 2 } 
+		.shp1 { fill: #1d2734;stroke: #ffcc33;stroke-width: 2 } 
+	</style>
+	<g id="iPhone XR/XS Max/11 – 7" clip-path="url(#cp1)">
+		<g id="Group 122">
+			<g id="Group 118">
+				<g id="Group 119">
+					<g id="Group 102">
+						<path id="Path 327" class="shp0" d="M10.1 0C13.5 0 16.26 2.75 16.26 6.15C16.26 9.55 13.18 12.3 10.1 12.3C7.03 12.3 3.95 9.55 3.95 6.15C3.95 2.75 6.71 0 10.1 0Z" />
+						<path id="Rectangle 1128" class="shp1" d="M3 6L17 6C18.66 6 20 7.34 20 9L20 20C20 21.66 18.66 23 17 23L3 23C1.34 23 0 21.66 0 20L0 9C0 7.34 1.34 6 3 6Z" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,30 @@
+
+.half_slider, .col-text, .col-img{
+	background-color: #ffa402;
+}
+
+.half_slider .carousel-caption{
+	left: 12%;
+	top: 5%;
+}
+
+.class-rtl .half_slider .carousel-caption{
+	right: 12%!important;
+}
+
+.p-1{
+	height: unset;
+}
+
+@media (max-width: 768px) {
+	.col-img img{
+		width: unset;
+	}
+	.class-rtl .half_slider .carousel-caption{
+		right: unset!important;
+		top: 0;	
+	}
+	.half_slider .carousel-caption{
+		top: 0;
+	}
+}

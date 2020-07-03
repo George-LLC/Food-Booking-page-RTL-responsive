@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" width="31" height="31">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-370 -41L44 -41L44 855L-370 855Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #eee5dd;stroke-linecap:round;stroke-width: 5 } 
+	</style>
+	<g id="iPhone XR/XS Max/11 – 6" clip-path="url(#cp1)">
+		<g id="Group 83">
+			<path id="Line 3" class="shp0" d="M5.75 5.57L25.42 25.25L5.75 5.57Z" />
+			<path id="Line 4" class="shp0" d="M25.42 5.57L5.75 25.25L25.42 5.57Z" />
+		</g>
+	</g>
+</svg>

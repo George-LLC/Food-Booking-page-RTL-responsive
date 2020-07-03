@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>FleyFley</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/popupStyle.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+  <link rel="stylesheet" type="text/css" href="css/findStore.css">
+</head>
+
+  <body class="class-rtl">
+    <header>
+      <div class="lang-container d-flex justify-content-lg-end justify-content-start">
+        <div class="lang-bar">
+          <ul>
+            <li><a class="eng" href="findStore.html">English</a></li>
+            <li><a class="arab" href="findStore_arab.html">العربية</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top site-header position-relative">
+        <div class="mx-auto header-logo position-absolute">
+          <a href="index_arab.html"><img src="imgs/logo.svg"></a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span id="bbb" class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse position-absolute pt-4 pt-lg-0 text-right" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item active"> <a class="nav-link" href="about_us_arab.html">إليك</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="menu_arab.html">البقالات داعي<</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="findStore_arab.html">رك الب</a> </li>
+            <li class="nav-item order-first order-md-last"> <a class="btn " onclick="openPopup()">نلاين بسهولة!</a> </li>
+          </ul>
+          <ul class="list-unstyled text-small social_links d-flex justify-content-center d-md-none">
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/instagram_header.svg"></a>
+            </li>
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/twitter_header.svg"></a>
+            </li>
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/fb_header.svg"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main role="main" class="main-content">
+      <div class="top-main top-ind"></div>
+    <div class="row navMapmargin">
+
+                  <div class="col-md-3 col-12 contacts order-last order-md-first">  
+
+
+                       <div class="search-panel d-none d-md-block">
+                        <form action="/action_page" autocomplete="off" class="input autocomplete">
+                          <input id="myInput" type="text" placeholder="ت سو   والب" autocomplete="on">                          
+                          <div class="search-icon">   
+                            <a href="">
+                              <img class="seachr-icon" src="imgs/searchIconStore.svg">
+                            </a>
+                          </div>                         
+                        </form> 
+                      </div>                      
+                                      
+                      
+                        <div class="nav nav-pills text-right" aria-orientation="vertical">
+                          <div class="nav-link active" data-toggle="pill" onclick="mapPlace('Hawally-store')">
+                              <div class="name">Hawally Store</div>
+                              <div>اركت سوبر  9:00 - 21:00</div>
+                              <div>ن أحسن السوبرماركت والب</div>
+                              <div>Tel. 9485732</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill" onclick="mapPlace('Kuwait')">
+                              <div class="name">Kuwait</div>
+                              <div>اركت سوبر  9:00 - 21:00</div>
+                              <div>ن أحسن السوبرماركت والب</div>
+                              <div>Tel. 9485732</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill" onclick="mapPlace('Paris')">
+                              <div class="name">Paris</div>
+                              <div>اركت سوبر  9:00 - 21:00</div>
+                              <div>ن أحسن السوبرماركت والب</div>
+                              <div>Tel. 9485732</div>
+                            </div>
+                            <div class="nav-link" data-toggle="pill" onclick="mapPlace('Yerevan-mall')">
+                              <div class="name">Yerevan Mall</div>
+                              <div>ماركت سوبر 9:00 - 21:00</div>
+                              <div>ن أحسن السوبرماركت والب</div>
+                              <div>Tel. 9485732</div>
+                            </div>
+                        
+                        </div>
+                      
+
+                    
+                  </div>
+                  <div class="col-12 contacts d-block d-md-none"> 
+                    
+                      <div class="search-panel">
+                        <form action="/action_page" autocomplete="off" class="input autocomplete">
+                          <input id="myInput1" type="text" placeholder="ت سو   والب"  autocomplete="on">                          
+                          <div class="search-icon">   
+                            <a href="">
+                              <img class="seachr-icon" src="imgs/searchIconStore.svg">
+                            </a>
+                          </div>                         
+                        </form> 
+                      </div>   
+                  </div>
+
+
+                  <div class="col-md-9 col-12 map"> 
+                        <div id="map-container-google-1" class="z-depth-1-half map-container" >
+                          <iframe id="iframeMap" src="https://maps.google.com/maps?q=Hawally-store&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                        </div> 
+                  </div>
+              </div>
+     
+    
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="row m-0 d-flex align-items-center bd-highlight">
+        <div class="col-4 footer_logo_big_mob d-none d-md-flex justify-content-start"> <img src="imgs/footer_logo.svg"> </div>
+        <div class="col-12 col-md-4 footer_menu pr-0">
+          <div class="row">
+            <div class="col-3 single-menu">
+              <ul class="list-unstyled text-small">
+                <li><a class="text-right" href="about_us_arab.html">السوبرماركت</a></li>
+                <li><a href="findStore_arab.html">حاجاتك</a></li>
+                <li><a href="#">السوبرماركت</a></li>
+              </ul>
+            </div>
+            <div class="col-3 single-menu">
+              <ul class="list-unstyled text-small">
+                <li><a href="menu_arab.html">حاجاتك</a></li>
+                <li><a href="#">والبقالات</a></li>
+              </ul>
+            </div>
+            <div class="col-3 single-menu">
+              <ul class="list-unstyled text-small">
+                <li><a href="#">السوبرماركت</a></li>
+                <li><a href="#">حاجاتك</a></li>
+              </ul>
+            </div>
+            <div class="col-3 single-menu">
+              <ul class="list-unstyled text-small">
+                <li><a class="eng" href="findStore.html">English</a></li>
+                <li><a class="arab" href="findStore_arab.html">العربية</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 pl-0">
+          <ul class="list-unstyled text-small social_links d-flex justify-content-center justify-content-md-end pl-md-5">
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/instagram.svg"></a>
+            </li>
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/twitter.svg"></a>
+            </li>
+            <li>
+              <a class="text-muted" href="#"><img src="imgs/fb.svg"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom pb-md-5">
+        <p class="float-left">
+          <a class="btt" href="#"><img src="imgs/btt.svg"></a>
+        </p>
+        <p class="float-right footer_fley">©FleyFley 2020</p>
+        <p class="d-flex d-md-none justify-content-center">
+          <a href="index_arab.html" class="logo_mob_center"><img src="imgs/footer_logo_mob.svg"></a>
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+<!-- ==================================    Sihn Up  Log In   ========================= -->
+
+
+    <!-- ====================================   POPUP LOGIN   ======================= -->
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>البقالا</h1>
+
+        <div class="link-signUp"><a href="#" onclick="closeForm(); openSignUp()"> السوبرماركت والبقا? لات التي توصل إليك حاجاتك ?</a></div>
+
+        <input type="text" autofocus placeholder="Enter Email" name="email" required>
+
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label class="container-input"> لترك البيت
+          <input type="checkbox" class="check">
+          <span class="checkmark"></span>
+        </label>
+        
+
+        <button type="submit" class="btn login">البقالا</button>
+        <a class="fogetPassword">ماركت والبقالات التي</a>
+        <button type="button" class="btn cancel" onclick="closeForm()"></button>
+        <!-- <img src="imgs/popupImg/closePopup.svg" alt="X"> -->
+        <p class="logWith">الات الت</p>
+        <div class="iconsSocial">
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/fb.svg" alt="fb"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/fb-mob.svg" alt="fb"></a>
+
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/instagram.svg" alt="instagram"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/instagram-mob.svg" alt="instagram"></a>
+
+          <a class="d-none d-md-inline-block" href=""><img src="imgs/popupImg/g+.svg" alt="g+"></a>
+          <a class="d-md-none" href=""><img src="imgs/popupImg/mob/g+mob.svg" alt="g+"></a>
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <!-- ====================================   POPUP SIGN IN   ======================= -->
+<div class="form-signUp" id="formSignUp">
+  <form class="form-container-signup">
+     <!-- <div class="modal-content"> -->
+    <div class="headerSignUp">
+      <h1>الات الت</h1>
+      <button type="button" class="btn closSign" onclick="closeFormSignUp()"></button>
+    </div>
+    <div class="div-cont-input">
+      <div class="div-input">
+        <input type="text" class="name-input" placeholder="Name" name="Name" required>
+        <input type="text" class="email-input" placeholder="Email" name="email" required>
+        <input type="password" class="pass-input" placeholder="Password" name="password" required>
+        <label class="container-inputSign">كت والبقالات الت
+          <input type="checkbox" class="checkSign">
+          <span class="checkmarkSign"></span>
+        </label>
+        <p class="passDis">لسوبرماركت والبقا? لات اليك حاجاتك ?t 8 تي توصل إل</p>
+      </div>
+      <button type="submit" class="btn login">الات الت</button>
+      <p class="passDis terms">تي توصل إليك </p>
+    </div>
+  <!-- </div> -->
+  </form>
+</div>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/popup.js"></script>
+    <script src="js/sign-up.js"></script>
+
+    <script>
+
+
+
+      var coll = document.getElementsByClassName("navbar-toggler-icon");
+      coll[0].addEventListener("click", function() {
+        this.classList.toggle("menuX");
+      });
+
+
+      var namePlace;
+      function mapPlace(place){
+          let iframeSrc = "https://maps.google.com/maps?q="+place+"&t=&z=13&ie=UTF8&iwloc=&output=embed";
+          document.getElementById("iframeMap").src=iframeSrc;
+      }
+
+
+///////////////////////////////   Autocomplete   ///////////////////////////////
+
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ["Afghanistan","Albania","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Guinea","Guinea Bissau","Guyana","Hawally Store","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Kuwait","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe","Paris","Yerevan Mall"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries); 
+autocomplete(document.getElementById("myInput1"), countries); 
+
+
+
+  var form = document.getElementById("formSignUp");
+  var myform = document.getElementById("myForm");
+
+  window.onclick = function(event) {    
+  if (event.target == form) {
+    form.style.display = "none";
+    document.body.style.overflow="unset";
+  }
+  if (event.target == myform) {
+    myform.style.display = "none";
+    document.body.style.overflow="unset";
+  }
+}
+
+     
+    </script>
+
+   
+
+  </body>
+
+
+  </html>
